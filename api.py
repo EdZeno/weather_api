@@ -18,6 +18,9 @@ def create_app(config=None):
 
     @app.route('/ping/', methods=['GET'])
     def ping():
+
+        # response = 'api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=a6121cbc06318911011306f3eaebaf2a&units=metric'
+        # print(response)
         return {
         "name": "weatherservice",
         "status": "ok",
